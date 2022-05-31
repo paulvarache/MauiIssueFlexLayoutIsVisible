@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiIssueFlexBoxIsVisible.MainPage">
+			 
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0" 
+            VerticalOptions="Center">
+
+            <FlexLayout>
+                <Image
+                    x:Name="image"
+                    Source="dotnet_bot.png"
+                    HeightRequest="32" />
+                <BoxView BackgroundColor="Red" FlexLayout.Grow="1" />
+                <Image
+                    Source="dotnet_bot.png"
+                    HeightRequest="32" />
+            </FlexLayout>
+
+            <Button 
+                Text="Click me"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+ 
+</ContentPage>
